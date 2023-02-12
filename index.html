@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea una cuenta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form id="formulario" action="/">
+            <h1>Crea una cuenta</h1>
+            <!--Se pone el título en español y no como el de la imagen
+            para darle a la página uniformidad en cuanto al idioma-->
+            <div class="input-control">
+                <label for="usuario">Nombre</label>
+                <input id="usuario" name="usuario" type="text">
+                <div class="error"></div>
+                <i class="error_icon"><img src="imagenes/error-icon.svg" alt="Icono de error"></i>
+                <i class="success-icon"><img src="imagenes/success-icon.svg" alt="Icono de correcto" ></i>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text">
+                <div class="error"></div>
+                <i class="error_icon"><img src="imagenes/error-icon.svg" alt="Icono de error"></i>
+                <i class="success-icon"><img src="imagenes/success-icon.svg" alt="Icono de correcto" ></i>                
+            </div>
+            <div class="input-control">
+                <label for="contrasena">Clave</label>
+                <input id="contrasena" name="contrasena" type="password" >
+                <div class="error"></div>
+                <i class="error_icon"><img src="imagenes/error-icon.svg" alt="Icono de error"></i>
+                <i class="success-icon"><img src="imagenes/success-icon.svg" alt="Icono de correcto" ></i>
+            </div>
+            <div class="input-control">
+                <label for="contrasena2">Confirme su clave</label>
+                <input id="contrasena2" name="contrasena2" type="password">
+                <div class="error"></div>
+                <i class="error_icon"><img src="imagenes/error-icon.svg" alt="Icono de error"></i>
+                <i class="success-icon"><img src="imagenes/success-icon.svg" alt="Icono de correcto" ></i>
+            </div>
+            <button type="submit">ENVIAR</button>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
